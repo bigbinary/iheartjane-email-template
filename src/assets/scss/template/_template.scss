@@ -1,15 +1,15 @@
 // These are the styles to make some of the templates look extra nice.
 // Feel free to remove these styles for production!
 
-// Body Styles 
+// Body Styles
 body,
-html, 
+html,
 .body {
-  background: #f3f3f3 !important;
+  background: rgb(255, 255, 255) !important;
 }
 
 .container.header {
-  background: #f3f3f3;
+  background: #ffffff;
 }
 
 .body-drip {
@@ -40,8 +40,8 @@ html,
 
 // Social Media
 table.button.facebook table td {
-  background: #3B5998 !important;
-  border-color: #3B5998;
+  background: #3b5998 !important;
+  border-color: #3b5998;
 }
 
 table.button.twitter table td {
@@ -50,10 +50,163 @@ table.button.twitter table td {
 }
 
 table.button.google table td {
-  background: #DB4A39 !important;
-  border-color: #DB4A39;
+  background: #db4a39 !important;
+  border-color: #db4a39;
 }
 
 .wrapper.secondary {
   background: #f3f3f3;
+}
+
+h2 {
+  color: $black;
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 16px;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 30px;
+  }
+}
+
+h3 {
+  color: $black;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 24px;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 24px;
+    font-weight: 600;
+  }
+}
+
+h4 {
+  color: #302d2f;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 12px;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 18px;
+  }
+}
+
+p {
+  color: #282735;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
+a.ihj-button {
+  background-color: #381e47;
+  padding: 10px 24px;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+  font-weight: 500;
+  border-radius: 40px;
+  text-align: center;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: #ffffff;
+  }
+
+  &.full-width {
+    width: 100%;
+  }
+
+  @media only screen and (max-width: 768px) {
+    padding: 14px 0;
+  }
+}
+
+a.ihj-button--secondary {
+  background-color: #ffffff;
+  border: thin solid #381e47;
+  padding: 14px 0;
+  font-size: 18px;
+  line-height: 24px;
+  color: #381e47;
+  font-weight: 500;
+  border-radius: 40px;
+  text-align: center;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: lighten(#381e47, 0.7);
+  }
+
+  &.full-width {
+    width: 100%;
+  }
+}
+
+.desk-hidden {
+  display: none !important;
+
+  @media only screen and (max-width: 768px) {
+    display: block !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mob-hidden {
+    display: none !important;
+  }
+}
+
+.ihj-hiw--wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .ihj-hiw--container {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 25%;
+
+    @media only screen and (max-width: 768px) {
+      width: 100%;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+
+    img {
+      margin: 0 0 8px;
+
+      @media only screen and (max-width: 768px) {
+        margin: 0 20px 0 0;
+      }
+    }
+  }
+}
+
+.btn_mob--wrapper {
+  display: none !important;
+
+  @media only screen and (max-width: 768px) {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 16px auto 32px;
+    width: 100%;
+  }
 }
