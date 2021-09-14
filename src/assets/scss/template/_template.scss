@@ -59,7 +59,7 @@ table.button.google table td {
 }
 
 h2 {
-  color: $black;
+  color: #000000;
   font-size: 36px;
   font-weight: 500;
   margin-bottom: 16px;
@@ -70,7 +70,7 @@ h2 {
 }
 
 h3 {
-  color: $black;
+  color: #000000;
   font-size: 28px;
   font-weight: 700;
   margin-bottom: 24px;
@@ -149,10 +149,16 @@ a.ihj-button--secondary {
 
 .desk-hidden {
   display: none !important;
+}
 
-  @media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
+  .desk-hidden {
     display: block !important;
   }
+}
+
+.mob-hidden {
+  display: block !important;
 }
 
 @media only screen and (max-width: 768px) {
@@ -198,15 +204,86 @@ a.ihj-button--secondary {
   }
 }
 
-.btn_mob--wrapper {
-  display: none !important;
+.orders-image {
+  width: 100%;
+  border-radius: 8px;
 
-  @media only screen and (max-width: 768px) {
-    display: flex !important;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 16px auto 32px;
-    width: 100%;
+  @media only screen and (max-width: 600px) {
+    width: 70% !important;
+  }
+}
+
+.orders__wrapper {
+  .wrapper-inner {
+    padding: 0 24px !important;
+
+    @media only screen and (max-width: 600px) {
+      padding: 0 12px !important;
+    }
+  }
+}
+.reservation__wrapper {
+  .wrapper-inner {
+    padding: 32px 24px !important;
+
+    @media only screen and (max-width: 600px) {
+      padding: 24px 12px !important;
+    }
+  }
+}
+
+.welcome_mail__wrapper {
+  .wrapper-inner {
+    padding: 36px 24px 54px !important;
+
+    @media only screen and (max-width: 600px) {
+      padding: 16px 16px 48px !important;
+    }
+  }
+}
+.welcome_mail-get_started__wrapper {
+  .wrapper-inner {
+    padding: 36px 24px 0 !important;
+
+    @media only screen and (max-width: 600px) {
+      padding: 16px 16px 0 !important;
+    }
+  }
+}
+.welcome_mail-final__wrapper {
+  .wrapper-inner {
+    padding: 8px 24px 0 !important;
+
+    @media only screen and (max-width: 600px) {
+      padding: 0 16px 0 !important;
+    }
+  }
+}
+
+.wrapper_no_padding {
+  .wrapper-inner {
+    padding: 0 !important;
+
+    @media only screen and (max-width: 600px) {
+      padding: 0 !important;
+    }
+  }
+}
+
+.forgot-password__wrapper {
+  .wrapper-inner {
+    padding: 36px 24px !important;
+
+    @media only screen and (max-width: 600px) {
+      padding: 24px 16px 32px !important;
+    }
+  }
+}
+
+.forgot-password__footer-text {
+  text-align: left !important;
+
+  @media only screen and (max-width: 600px) {
+    text-align: center !important;
   }
 }
