@@ -1,58 +1,68 @@
 ---
 layout: index-layout
-subject: Reset Password
+subject: Welcome Mail
 ---
 
 <container>
   <spacer size="42"></spacer>
 
   <row>
-    <columns small="12">
+    <columns small="12" large="12">
       <img
-        class="show-for-large"
         style="height: 34px; width: auto"
         src="https://big-binary-jane.s3.us-west-2.amazonaws.com/logo.png"
       />
-      <center>
-        <img
-          class="hide-for-large"
-          style="height: 34px; width: 110px !important; margin: 0 auto;"
-          src="https://big-binary-jane.s3.us-west-2.amazonaws.com/logo.png"
-        />
-      </center>
-      <spacer size="28"></spacer>
+      <spacer size="12"></spacer>
       <wrapper
-        class="forgot-password__wrapper show-for-large"
         style="
-          background-color: white;
+          background-color: white !important;
           border: thin solid #ebebf4;
           text-align: left;
         "
       >
-        <h2>Forgot your password?</h2>
-        <p>
-          Don't sweat it! We all need a reminder every now and then. If you need
-          to reset your password, the button below will remain active for 3 days
-          after receiving this email.
-        </p>
-        <a
-          style="
-            background-color: #381e47;
-            padding: 10px 24px;
-            font-size: 18px;
-            line-height: 24px;
-            color: #ffffff;
-            font-weight: 500;
-            border-radius: 40px;
-            text-align: center;
-            text-decoration: none;
-          "
-          href="#!"
-          >Recover password</a
-        >
-      </wrapper>
-      <wrapper
-        class="forgot-password__wrapper hide-for-large"
+        <wrapper class="welcome_mail__wrapper show-for-large">
+          <h2
+            style="
+              color: #000000;
+              font-size: 36px;
+              font-weight: 500;
+              margin-bottom: 16px;
+            "
+          >
+            Welcome to Jane
+          </h2>
+          <p
+            style="
+              color: #282735;
+              font-size: 16px;
+              font-weight: normal;
+              line-height: 1.5;
+              margin-bottom: 24px;
+            "
+          >
+            Congratulations! You've just joined a community of millions of
+            cannabis shoppers on
+            <a href="iheartjane.com" target="_blank">iheartjane.com</a> as
+            username@email.com.
+          </p>
+            <a
+            style="
+              background-color: #381e47;
+              padding: 12px 24px;
+              font-size: 18px;
+              line-height: 24px;
+              color: #ffffff;
+              font-weight: 500;
+              border-radius: 40px;
+              text-align: center;
+              text-decoration: none;
+            "
+            href="#!"
+            >Shop top rated products</a
+          >
+        </wrapper>
+        <wrapper
+        class="welcome_mail__wrapper hide-for-large"
         style="
           background-color: white;
           border: thin solid #ebebf4;
@@ -60,17 +70,18 @@ subject: Reset Password
           width: 100%;
         "
       >
-        <h2 style="text-align: center">Forgot your password?</h2>
-        <p style="text-align: center">
-          Don't sweat it! We all need a reminder every now and then. If you need
-          to reset your password, the button below will remain active for 3 days
-          after receiving this email.
+        <h2 style="text-align: center">Welcome to Jane</h2>
+        <p style="text-align: center; white-space: pre-line;">
+          Congratulations! You've just joined a community of millions of
+            cannabis shoppers on
+            <a href="iheartjane.com" target="_blank">iheartjane.com</a> as
+            username@email.com.
         </p>
         <center>
           <a
             style="
               background-color: #381e47;
-              padding: 10px 24px;
+              padding: 12px 28px;
               font-size: 18px;
               line-height: 24px;
               color: #ffffff;
@@ -81,35 +92,283 @@ subject: Reset Password
               width: 100%;
             "
             href="#!"
-            >Recover password</a
+            >Shop top rated products</a
           >
         </center>
       </wrapper>
+        <div
+          class="show-for-large"
+          style="
+            width: 100%;
+            height: 410px;
+            margin-bottom: 48px;
+            background: url('https://big-binary-jane.s3.us-west-2.amazonaws.com/welcome_email_bg.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+          "
+        >
+          <img
+            style="width: 80%; margin: auto"
+            src="https://big-binary-jane.s3.us-west-2.amazonaws.com/desktop+search.gif"
+          />
+        </div>
+        <div
+          class="hide-for-large"
+          style="
+            width: 100%;
+            height: 340px;
+            margin-bottom: 40px;
+            background: url('https://big-binary-jane.s3.us-west-2.amazonaws.com/welcome_email_mob_bg.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+          "
+        >
+          <img
+            style="width: 85%; margin: auto"
+            src="https://big-binary-jane.s3.us-west-2.amazonaws.com/mobile+search.gif"
+          />
+        </div>
+        <wrapper class="welcome_mail-get_started__wrapper">
+          <h3 class="text-left">Ways to get started</h3>
+          <row class="collapse">
+            <columns small="2" large="1">
+              <img
+                class="show-for-large"
+                style="width: 60%; height: auto"
+                src="https://big-binary-jane.s3.us-west-2.amazonaws.com/shop_by_product.png"
+              />
+              <img
+                class="hide-for-large"
+                style="width: 60% !important; height: auto"
+                src="https://big-binary-jane.s3.us-west-2.amazonaws.com/shop_by_product.png"
+              />
+            </columns>
 
+            <columns small="10" large="11">
+              <h4>Shop by product</h4>
+              <p style="margin-bottom: 0">
+                Browse popular filters from the community
+              </p>
+              <ul class="show-for-large" style="padding-left: 18px">
+                <li style="margin-bottom: 8px; font-weight: 400">
+                  <a>Top rated candies</a>
+                </li>
+                <li style="margin-bottom: 8px; font-weight: 400">
+                  <a>CBD for sleep</a>
+                </li>
+                <li style="margin-bottom: 8px; font-weight: 400">
+                  <a>High potency Indica flower</a>
+                </li>
+              </ul>
+            </columns>
+          </row>
+          <div class="hide-for-large">
+            <row>
+              <columns small="12">
+                <a
+                  style="margin: 0 0 16px; display: block;font-weight: 400;"
+                  class="ihj-button--secondary full-width"
+                  href="#!"
+                  >Top rated candies</a
+                >
+                <a
+                  style="margin: 0 0 16px; display: block;font-weight: 400;"
+                  class="ihj-button--secondary full-width"
+                  href="#!"
+                  >CBD for sleep</a
+                >
+                <a
+                  style="margin: 0 0 16px; display: block;font-weight: 400;"
+                  class="ihj-button--secondary full-width"
+                  href="#!"
+                  >High potency Indica flower</a
+                >
+              </columns>
+            </row>
+          </div>
+          <row class="collapse">
+            <columns small="2" large="1">
+              <img
+                class="show-for-large"
+                style="width: 60%; height: auto"
+                src="https://big-binary-jane.s3.us-west-2.amazonaws.com/shop_by_store.png"
+              />
+              <img
+                class="hide-for-large"
+                style="width: 60% !important; height: auto"
+                src="https://big-binary-jane.s3.us-west-2.amazonaws.com/shop_by_store.png"
+              />
+            </columns>
+            <columns small="10" large="11">
+              <h4>Shop by store</h4>
+              <p class="show-for-large" style="margin-bottom: 0">
+                <a href="#!">Explore the map</a> to find dispensaries in your
+                neighborhood
+              </p>
+              <p class="hide-for-large" style="margin-bottom: 16px">
+                Explore the map to find dispensaries in your neighborhood
+              </p>
+            </columns>
+          </row>
+          <div class="hide-for-large">
+            <row>
+              <columns small="12">
+                <a
+                  style="display: block; font-weight: 400;"
+                  class="ihj-button--secondary full-width"
+                  href="#!"
+                  >Explore the map</a
+                >
+              </columns>
+            </row>
+          </div>
+        </wrapper>
+        <spacer size="40"></spacer>
+        <wrapper class="welcome_mail-final__wrapper">
+          <h3>How it works</h3>
+          <row>
+            <columns small="12" large="3">
+              <wrapper class="wrapper_no_padding show-for-large">
+                <img
+                  style="width: 29px; height: 25px; margin: 0 auto 8px"
+                  src="https://big-binary-jane.s3.us-west-2.amazonaws.com/shopping_cart.png"
+                />
+                <h4 style="margin-bottom: 4px; text-align: center">Shop</h4>
+                <p style="text-align: center">Compare products in real-time</p>
+              </wrapper>
+              <wrapper class="wrapper_no_padding hide-for-large">
+                <row class="collapse">
+                  <columns small="2">
+                    <img
+                      style="width: 29px; height: 25px; margin-right: 8px"
+                      src="https://big-binary-jane.s3.us-west-2.amazonaws.com/shopping_cart.png"
+                    />
+                  </columns>
+                  <columns small="10">
+                    <h4 style="margin-bottom: 8px">Shop</h4>
+                    <p style="margin-bottom: 0px">
+                      Compare products in real-time
+                    </p>
+                  </columns>
+                </row>
+              </wrapper>
+            </columns>
+            <columns small="12" large="3">
+              <wrapper class="wrapper_no_padding show-for-large">
+                <img
+                  style="width: 25px; height: 25px; margin: 0 auto 8px"
+                  src="https://big-binary-jane.s3.us-west-2.amazonaws.com/double_check.png"
+                />
+                <h4 style="margin-bottom: 4px; text-align: center">Reserve</h4>
+                <p style="text-align: center">
+                  Place an order for pickup, delivery, or curbside
+                </p>
+              </wrapper>
+              <wrapper class="wrapper_no_padding hide-for-large">
+                <row class="collapse">
+                  <columns small="2">
+                    <img
+                      style="width: 25px; height: 25px; margin-right: 8px"
+                      src="https://big-binary-jane.s3.us-west-2.amazonaws.com/double_check.png"
+                    />
+                  </columns>
+                  <columns small="10">
+                    <h4 style="margin-bottom: 8px">Reserve</h4>
+                    <p style="margin-bottom: 0px">
+                      Place an order for pickup, delivery, or curbside
+                    </p>
+                  </columns>
+                </row>
+              </wrapper>
+            </columns>
+            <columns small="12" large="3">
+              <wrapper class="wrapper_no_padding show-for-large">
+                <img
+                  style="width: 107px; height: 28px; margin: 0 auto 8px"
+                  src="https://big-binary-jane.s3.us-west-2.amazonaws.com/star_group.png"
+                />
+                <h4 style="margin-bottom: 4px; text-align: center">Enjoy</h4>
+                <p style="text-align: center">
+                  Help the community by leaving a review
+                </p>
+              </wrapper>
+              <wrapper class="wrapper_no_padding hide-for-large">
+                <row class="collapse">
+                  <columns small="2">
+                    <img
+                      style="
+                        width: 25px !important;
+                        height: 28px;
+                        margin-right: 8px;
+                      "
+                      src="https://big-binary-jane.s3.us-west-2.amazonaws.com/star_single.png"
+                    />
+                  </columns>
+                  <columns small="10">
+                    <h4 style="margin-bottom: 8px">Enjoy</h4>
+                    <p style="margin-bottom: 0px">
+                      Help the community by leaving a review
+                    </p>
+                  </columns>
+                </row>
+              </wrapper>
+            </columns>
+          </row>
+        </wrapper>
+      </wrapper>
+
+      <spacer size="40"></spacer>
+      <center>
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            width: fit-content;
+            margin: 0 auto;
+          "
+        >
+          <p style="margin-bottom: 0px">Made with</p>
+          <img
+            style="margin: 0 4px; width: 22px; height: 17px"
+            src="https://big-binary-jane.s3.us-west-2.amazonaws.com/yellow_heart.png"
+          />
+          <p style="margin-bottom: 0px">in Santa Cruz, CA</p>
+        </div>
+      </center>
+      <spacer size="32"></spacer>
+      <center>
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            width: fit-content;
+            margin: 0 auto;
+          "
+        >
+          <a style="width: 40px; height: 40px">
+            <img
+              src="https://big-binary-jane.s3.us-west-2.amazonaws.com/linkedin.png"
+            />
+          </a>
+          <a style="width: 40px; height: 40px; margin: 0 20px">
+            <img
+              src="https://big-binary-jane.s3.us-west-2.amazonaws.com/facebook.png"
+            />
+          </a>
+          <a style="width: 40px; height: 40px">
+            <img
+              src="https://big-binary-jane.s3.us-west-2.amazonaws.com/instagram.png"
+            />
+          </a>
+        </div>
+      </center>
       <spacer size="24"></spacer>
-
       <p
-        class="show-for-large"
         style="
           font-size: 13px;
           font-weight: normal;
           line-height: 24px;
           margin-bottom: 8px;
-        "
-      >
-        Need some help? We're here for you. Drop a message to
-        <span style="color: #2199e8; text-decoration: underline"
-          >support@iheartjane.com</span
-        >
-        any time.
-      </p>
-      <p
-        class="hide-for-large"
-        style="
-          font-size: 13px !important;
-          font-weight: normal;
-          line-height: 24px;
-          margin-bottom: 12px;
           text-align: center;
         "
       >
@@ -121,30 +380,8 @@ subject: Reset Password
         any time.
       </p>
       <p
-        class="show-for-large"
         style="
           font-size: 13px;
-          font-weight: normal;
-          line-height: 24px;
-          margin-bottom: 0px;
-        "
-      >
-        © 2021 Jane Technologies, Inc.
-        <a href="https://www.iheartjane.com/policy"
-          ><span style="color: #2199e8; text-decoration: underline"
-            >Privacy</span
-          ></a
-        >&nbsp;
-        <a href="https://www.iheartjane.com/terms"
-          ><span style="color: #2199e8; text-decoration: underline"
-            >Terms of Service</span
-          ></a
-        >
-      </p>
-      <p
-        class="hide-for-large"
-        style="
-          font-size: 13px !important;
           font-weight: normal;
           line-height: 24px;
           margin-bottom: 0px;
