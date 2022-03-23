@@ -1,0 +1,110 @@
+// Body Styles
+body,
+html,
+.body {
+  background: #ffffff !important;
+}
+
+h2, h3, h4, h5, h6{
+  color: #0E0E0E;
+}
+h2 {
+  font-size: 64px;
+  font-weight:700;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  @media only screen and (max-width: 600px) {
+    font-size: 48px;
+    line-height: 1.1;
+  }
+}
+
+h3 {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+h4 {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+h5 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+h6 {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  line-height: 1.375;
+}
+
+p {
+  color: #000000;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
+  margin-bottom: 0px;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+.columns {
+  padding-bottom: 0 !important;
+}
+
+
+.ihj-email-header{
+  border-top: 14px solid #5E1FF0;
+}
+
+.ihj-email-footer{
+  border-top: 14px solid #5E1FF0;
+  p{
+    font-size: 12px;
+    line-height: 24px;
+    a{
+      color: #1576c8;
+    }
+  }
+}
+
+.ihj-content-wrapper{
+  max-width: 340px;
+  margin: 0 auto;
+  @media only screen and (max-width: 600px) {
+    padding: 0 20px;
+  }
+}
+
+td.large-12 center, th.large-12 center{
+  min-width: 100% !important;
+}
+
+.ihj-button{
+  padding: 12px 24px;
+  letter-spacing: 0.03em;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 100px;
+  border: 2px solid transparent;
+}
+.ihj-button--primary{
+  background: #5E1FF0;
+  color: #fff !important;
+}
+.ihj-button--secondary{
+  background: #dfd2fc;
+  color: #5E1FF0 !important;
+  border: 2px solid #5E1FF0;
+}
