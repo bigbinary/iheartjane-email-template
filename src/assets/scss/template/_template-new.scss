@@ -9,14 +9,10 @@ h2, h3, h4, h5, h6{
   color: #0E0E0E;
 }
 h2 {
-  font-size: 64px;
+  font-size: 48px;
   font-weight:700;
   letter-spacing: -0.03em;
-  line-height: 1;
-  @media only screen and (max-width: 600px) {
-    font-size: 48px;
-    line-height: 1.1;
-  }
+  line-height: 1.1;
 }
 
 h3 {
@@ -76,12 +72,14 @@ p {
     }
   }
 }
+.ihj-email-footer-content{
+  padding: 0 30px !important;
+}
 
 .ihj-content-wrapper{
-  max-width: 340px;
-  margin: 0 auto;
-  @media only screen and (max-width: 600px) {
-    padding: 0 20px;
+  width: 400px !important;
+  .wrapper-inner{
+    padding: 0 30px !important;
   }
 }
 
@@ -107,4 +105,19 @@ td.large-12 center, th.large-12 center{
   background: #dfd2fc;
   color: #5E1FF0 !important;
   border: 2px solid #5E1FF0;
+}
+.ihj-welcome-message{
+  p{
+    color: #282735;
+  }
+}
+.ihj-welcome-content{
+  p{
+    color: #0E0E0E;
+  }
+}
+.wrapper.ihj-mobile-cta{
+  .wrapper-inner{
+    padding: 0 30px !important;
+  }
 }

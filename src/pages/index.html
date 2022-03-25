@@ -1,28 +1,37 @@
 ---
 layout: index-layout
-subject: Forgot Password
+subject: Purchase receipt - Registered web users
 ---
 
 <container>
   <row>
     <columns small="12" large="12">
       {{>header}}
-      <spacer size="42"></spacer>
-      <wrapper>
-        <div class="ihj-content-wrapper">
-          <center>
-            <img src="assets/img/password-pattern.png" style="width: 80px;" alt="" />
-          </center>
-          <spacer size="56"></spacer>
-          <h4 style="margin-bottom: 16px">Forgot <br />password?</h4>
-          <p>
-            We all need a reminder every now and then. If you need to reset your password, the button below will remain active for 3 days after receiving this email.
-          </p>
+      <center>
+        <wrapper class="ihj-content-wrapper">
           <spacer size="40"></spacer>
-          <a href="#!" class="ihj-button ihj-button--primary">Reset password</a>
-        </div>
-      </wrapper>
-      <spacer size="52"></spacer>
+          <center>
+            <img src="assets/img/order-thumbnail.png" style="width: 96px;" alt="" />
+          </center>
+          <spacer size="40"></spacer>
+          <h4 style="margin-bottom: 16px">Thanks for choosing Jane!</h4>
+          <p style="color: #0E0E0E">
+            You can help the cannabis community by reviewing your visit.
+          </p>
+          <spacer size="48"></spacer>
+          {{>rating-large}}
+        </wrapper>
+      </center>
+      <spacer size="24"></spacer>
+      <center>
+        <wrapper class="ihj-content-wrapper">
+          <div style="padding: 24px 16px;background: #F7F7F7;border-radius: 6px;">
+            <h5 style="margin-bottom: 24px;font-size: 20px;line-height: 24px;color: #302D2F;font-weight: 500;">Order Summary</h5>
+            {{>rating-small}}
+          </div>
+        </wrapper>
+      </center>
+      <spacer size="100"></spacer>
       {{>footer}}
     </columns>
   </row>
