@@ -37,7 +37,7 @@ h6 {
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 1.6px;
   line-height: 1.375;
 }
 
@@ -69,6 +69,7 @@ p {
     line-height: 24px;
     a{
       color: #1576c8;
+      text-decoration: underline;
     }
   }
 }
@@ -143,5 +144,41 @@ td.large-12 center, th.large-12 center{
     padding: 20px 0 12px !important;
     border-top: 1px solid #E2DCFC;
     border-bottom: 1px solid #E2DCFC;
+  }
+}
+
+.ihj-funding-badge{
+  .wrapper-inner{
+    text-align: center;
+    padding: 24px !important;
+    border-radius: 14px;
+    background: #ffffff;
+    p{
+      font-size: 36px;
+      line-height: 1.1;
+      font-weight: 700;
+      color: #000000;
+      span{
+        color: #FF9900;
+      }
+    }
+  }
+}
+
+.ihj-share-url{
+  .wrapper-inner{
+    text-align: center;
+    padding: 20px !important;
+    border-radius: 14px;
+    background: #ffffff;
+    h6{
+      line-height: 1;
+    }
+    p{
+      color: #000000;
+      a{
+        color: #000000 !important;
+      }
+    }
   }
 }
