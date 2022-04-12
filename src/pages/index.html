@@ -1,29 +1,30 @@
 ---
 layout: index-layout
-subject: Forgot Password
+subject: Purchase receipt - not registered web users
 ---
 
 <container>
   <row>
     <columns small="12" large="12">
       {{>header}}
-      <spacer size="42"></spacer>
+      {{>order-welcome}}
+      <spacer size="24"></spacer>
       <center>
-        <wrapper class="ihj-content-wrapper">
-          <center>
-            <img src="https://assets.iheartjane.com/marketing/password/password-pattern-3x.png" style="width: 80px;" alt="" />
-          </center>
-          <spacer size="56"></spacer>
-          <img src="https://assets.iheartjane.com/marketing/text/forgot-password-3x.png" style="width: 150px;" alt="" />
-          <spacer size="16"></spacer>
-          <p>
-            We all need a reminder every now and then. If you need to reset your password, the button below will remain active for 3 days after receiving this email.
-          </p>
-          <spacer size="40"></spacer>
-          <a href="#!" class="ihj-button ihj-button--primary">Reset password</a>
+        <wrapper class="ihj-content-wrapper ihj-content-wrapper--receipt">
+          <wrapper class="ihj-receipt-wrapper">
+            <h5 style="margin-bottom: 24px;font-size: 20px;line-height: 24px;color: #302D2F;">Order Summary</h5>
+            {{>product}}
+            <spacer size="24"></spacer>
+            {{>product}}
+            <spacer size="24"></spacer>
+            {{>pricing}}
+            <spacer size="24"></spacer>
+            {{>address}}
+          </wrapper>
         </wrapper>
       </center>
-      <spacer size="52"></spacer>
+      <spacer size="100"></spacer>
+      {{>mobile-cta}}
       {{>footer}}
     </columns>
   </row>

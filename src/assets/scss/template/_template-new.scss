@@ -87,6 +87,16 @@ p {
   .wrapper-inner{
     padding: 0 30px !important;
   }
+  &.ihj-content-wrapper--receipt{
+    .wrapper-inner{
+      padding: 0 !important;
+    }
+    .ihj-receipt-wrapper{
+      .wrapper-inner{
+        padding: 24px 16px !important;
+      }
+    }
+  }
 }
 
 td.large-12 center, th.large-12 center{
