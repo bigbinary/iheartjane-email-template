@@ -1,29 +1,55 @@
 ---
 layout: index-layout
-subject: Purchase receipt - app - not registered old customer
+subject: Referral 2
 ---
 
 <container>
   <row>
     <columns small="12" large="12">
       {{>header}}
-      {{>order-welcome}}
-      <spacer size="24"></spacer>
-      <center>
-        <wrapper class="ihj-content-wrapper ihj-content-wrapper--receipt">
-          <wrapper class="ihj-receipt-wrapper">
-            <h5 style="margin-bottom: 24px;font-size: 20px;line-height: 24px;color: #302D2F;">Order Summary</h5>
-            {{>product}}
-            <spacer size="24"></spacer>
-            {{>product}}
-            <spacer size="24"></spacer>
-            {{>pricing}}
-            <spacer size="24"></spacer>
-            {{>address}}
+      <wrapper style="background: #ffdecc;background-image: linear-gradient(#ffdecc, #ffdecc) !important;">
+        <spacer size="48"></spacer>
+        <wrapper class="ihj-content-wrapper">
+          <center>
+            <img src="https://assets.iheartjane.com/marketing/text/thanks-for-your-referral-3x.png" style="width: 280px;" alt="" />
+          </center>
+          <spacer size="16"></spacer>
+          <center>
+            <wrapper class="ihj-count-block">
+              <p>You’ve made <br /> <strong style="color: #FF9900;">11</strong><br /> referrals so far</p>
+            </wrapper>
+            <spacer size="16"></spacer>
+            <wrapper class="ihj-count-block">
+              <p>Which totals <br /> <strong style="color: #FF5500;">$110</strong><br /> in donations</p>
+            </wrapper>
+          </center>
+          <spacer size="16"></spacer>
+          <p style="text-align: center;">For every new customer, Jane supports the Last Prisoner Project by donating $5.</p>
+        </wrapper>
+        <wrapper 
+          style="
+            width: 100%;
+            height: 470px;
+            background: url('https://assets.iheartjane.com/marketing/referral/Property-1-Group-9334-3x.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+          "
+        >
+          <spacer size="180" class="show-for-large"></spacer>
+          <spacer size="150" class="hide-for-large"></spacer>
+          <wrapper class="ihj-content-wrapper">
+            <wrapper class="ihj-share-url">
+              <h6 style="margin-bottom: 16px;color: #FF5500;" class="text-center">share the love</h6>
+              <p class="text-center"><a href="#!">http://www.myjaneurl.com/loremipsum</a></p>
+            </wrapper>
+            <spacer size="16"></spacer>
+            <wrapper class="ihj-funding-badge ihj-funding-badge--secondary">
+              <p class="text-center"><span>$75,000</span> raised </p>
+            </wrapper>
           </wrapper>
         </wrapper>
-      </center>
-      <spacer size="55"></spacer>
+      </wrapper>
       {{>footer}}
     </columns>
   </row>
