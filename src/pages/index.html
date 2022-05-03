@@ -1,29 +1,34 @@
 ---
 layout: index-layout
-subject: Successful reset
+subject: Purchase receipt - app - registered old customer
 ---
 
 <container>
   <row>
     <columns small="12" large="12">
       {{>header}}
-      <spacer size="42"></spacer>
+      {{>order-welcome}}
+      <spacer size="24"></spacer>
       <center>
-        <wrapper class="ihj-content-wrapper">
-          <center>
-            <img src="https://assets.iheartjane.com/marketing/password/reset-success@3x.png" style="width: 80px;" alt="" />
-          </center>
-          <spacer size="56"></spacer>
-          <img src="https://assets.iheartjane.com/marketing/password/Success@3x.png" style="width: 150px;" alt="" />
-          <spacer size="28"></spacer>
-          <p>Your password has been changed.</p>
-          <spacer size="50"></spacer>
-          <a href="https://www.google.com/" class="ihj-button ihj-button--primary">Sign in</a>
-          <spacer size="50"></spacer>
-          <p>Didn’t make this change? Contact the Jane team at <a href="mailto:support@iheartjane.com">support@iheartjane.com</a> and we’ll get to the bottom of this.</p>
+        <wrapper class="ihj-content-wrapper ihj-content-wrapper--receipt">
+          <wrapper class="ihj-receipt-wrapper">
+            <h5 style="margin-bottom: 24px;font-size: 20px;line-height: 24px;color: #302D2F;">Order Summary</h5>
+            {{>product}}
+            <spacer size="24"></spacer>
+            {{>rating-small}}
+            <spacer size="24"></spacer>
+            {{>product}}
+            <spacer size="24"></spacer>
+            {{>rating-small}}
+            <spacer size="24"></spacer>
+            {{>pricing}}
+            <spacer size="24"></spacer>
+            {{>address}}
+          </wrapper>
         </wrapper>
       </center>
-      <spacer size="52"></spacer>
+      <spacer size="100"></spacer>
+      {{>referal-cta-2}}
       {{>footer}}
     </columns>
   </row>
