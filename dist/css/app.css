@@ -293,7 +293,7 @@ p {
     font-size: 12px;
     line-height: 24px; }
     .ihj-email-footer p a {
-      color: #1576c8;
+      color: #1576c8 !important;
       text-decoration: underline; }
 
 .ihj-email-footer-content {
