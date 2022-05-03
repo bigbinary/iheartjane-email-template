@@ -1,17 +1,17 @@
-import gulp     from 'gulp';
-import plugins  from 'gulp-load-plugins';
-import browser  from 'browser-sync';
-import rimraf   from 'rimraf';
-import panini   from 'panini';
-import yargs    from 'yargs';
+import gulp from 'gulp';
+import plugins from 'gulp-load-plugins';
+import browser from 'browser-sync';
+import rimraf from 'rimraf';
+import panini from 'panini';
+import yargs from 'yargs';
 import lazypipe from 'lazypipe';
-import inky     from 'inky';
-import fs       from 'fs';
-import siphon   from 'siphon-media-query';
-import path     from 'path';
-import merge    from 'merge-stream';
-import beep     from 'beepbeep';
-import colors   from 'colors';
+import inky from 'inky';
+import fs from 'fs';
+import siphon from 'siphon-media-query';
+import path from 'path';
+import merge from 'merge-stream';
+import beep from 'beepbeep';
+import colors from 'colors';
 
 const $ = plugins();
 
@@ -126,11 +126,11 @@ function inliner(css) {
       removeLinkTags: false
     })
     .pipe($.replace, '<!-- <style> -->', `<style>${mqCss}</style>`)
-    .pipe($.replace, '<link rel="stylesheet" type="text/css" href="css/app.css">', '')
-    .pipe($.htmlmin, {
-      collapseWhitespace: true,
-      minifyCSS: true
-    });
+    .pipe($.replace, '<link rel="stylesheet" type="text/css" href="css/app.css">', '');
+  // .pipe($.htmlmin, {
+  //   collapseWhitespace: true,
+  //   minifyCSS: true
+  // });
 
   return pipe();
 }
@@ -139,7 +139,7 @@ function inliner(css) {
 function creds(done) {
   var configPath = './config.json';
   try { CONFIG = JSON.parse(fs.readFileSync(configPath)); }
-  catch(e) {
+  catch (e) {
     beep();
     console.log('[AWS]'.bold.red + ' Sorry, there was an issue locating your config.json. Please see README.md');
     process.exit();
@@ -171,7 +171,7 @@ function litmus() {
   var awsURL = !!CONFIG && !!CONFIG.aws && !!CONFIG.aws.url ? CONFIG.aws.url : false;
 
   return gulp.src('dist/**/*.html')
-    .pipe($.if(!!awsURL, $.replace(/=('|")(\/?assets\/img)/g, "=$1"+ awsURL)))
+    .pipe($.if(!!awsURL, $.replace(/=('|")(\/?assets\/img)/g, "=$1" + awsURL)))
     .pipe($.litmus(CONFIG.litmus))
     .pipe(gulp.dest('dist'));
 }
@@ -185,7 +185,7 @@ function mail() {
   }
 
   return gulp.src('dist/**/*.html')
-    .pipe($.if(!!awsURL, $.replace(/=('|")(\/?assets\/img)/g, "=$1"+ awsURL)))
+    .pipe($.if(!!awsURL, $.replace(/=('|")(\/?assets\/img)/g, "=$1" + awsURL)))
     .pipe($.mail(CONFIG.mail))
     .pipe(gulp.dest('dist'));
 }
@@ -197,7 +197,7 @@ function zip() {
 
   function getHtmlFiles(dir) {
     return fs.readdirSync(dir)
-      .filter(function(file) {
+      .filter(function (file) {
         var fileExt = path.join(dir, file);
         var isHtml = path.extname(fileExt) == ext;
         return fs.statSync(fileExt).isFile() && isHtml;
@@ -206,7 +206,7 @@ function zip() {
 
   var htmlFiles = getHtmlFiles(dist);
 
-  var moveTasks = htmlFiles.map(function(file){
+  var moveTasks = htmlFiles.map(function (file) {
     var sourcePath = path.join(dist, file);
     var fileName = path.basename(sourcePath, ext);
 
@@ -217,14 +217,14 @@ function zip() {
       }));
 
     var moveImages = gulp.src(sourcePath)
-      .pipe($.htmlSrc({ selector: 'img'}))
+      .pipe($.htmlSrc({ selector: 'img' }))
       .pipe($.rename(function (currentpath) {
         currentpath.dirname = path.join(fileName, currentpath.dirname.replace('dist', ''));
         return currentpath;
       }));
 
     return merge(moveHTML, moveImages)
-      .pipe($.zip(fileName+ '.zip'))
+      .pipe($.zip(fileName + '.zip'))
       .pipe(gulp.dest('dist'));
   });
 
