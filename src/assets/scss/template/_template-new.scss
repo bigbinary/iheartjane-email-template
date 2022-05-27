@@ -122,6 +122,11 @@ td.large-12 center, th.large-12 center{
   color: #5E1FF0 !important;
   border: 2px solid #5E1FF0;
 }
+.ihj-button--tertiary{
+  background: #ffffff;
+  color: #5E1FF0 !important;
+  border: 2px solid transparent;
+}
 .ihj-welcome-message{
   p{
     color: #282735;
@@ -218,5 +223,12 @@ td.large-12 center, th.large-12 center{
     p{
       text-align: center;
     }
+  }
+}
+
+.ihj-fullwidth-wrapper{
+  min-width: 400px !important;
+  .wrapper-inner{
+    padding: 0 30px !important;
   }
 }
